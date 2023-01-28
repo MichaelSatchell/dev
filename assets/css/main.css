@@ -504,6 +504,12 @@ footer {
   width: 100%;
   height: auto;
 }
+
+.avatar:hover {
+    border-radius: 30%;
+    border: 2px solid greenyellow;
+    
+}
 /* .avatar:hover {
   transform: translateX(2px) rotate(360deg);
 } */
