@@ -693,7 +693,7 @@ body {
  width: 100%;
   overflow: auto;  
   background: linear-gradient(315deg, rgb(52, 52, 52, 0.25 ) 3%, rgb(54, 69, 79, 0.25) 38%, rgb(53, 57, 53 0.25) 68%, rgb(1, 0, 0, 0.25) 98%);
-  animation: gradient 25s ease infinite;
+  animation: gradient 10s ease infinite;
   background-size: 400% 400%;
   background-attachment: fixed;
  
