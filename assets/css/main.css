@@ -546,10 +546,18 @@ footer {
 }
 
 .selfie {
-  
   width: 100%;
-    
-  
+        
+}
+/* changed the placement for extra large size screens
+resized the top padding of selfie image to show better on larger screens.
+*/
+@media only screen and (min-width:1200px) {
+    .selfie {
+        width: 100%;
+        padding-top: 36rem;
+        
+    }
 }
 
 .selfContained {
