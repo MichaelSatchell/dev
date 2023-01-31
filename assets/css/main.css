@@ -325,7 +325,14 @@ align-items: center;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-   
+     
+}
+.cardTitleImg {
+  padding-top: 40rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -570,7 +577,7 @@ resized the top padding of selfie image to show better on larger screens.
 .resize {
   bottom: 50%;
   position: relative;
-  
+    
 }
 
 .outline {
@@ -899,6 +906,8 @@ body {
   margin: 0;
   
   
+  
+  
 }
 
 .contact {
@@ -910,7 +919,7 @@ body {
   flex-direction: column;
   left: 10%;
   margin: 15rem 0 0 0;
-  
+  text-transform: uppercase;
 }
 
 .submit {
@@ -920,6 +929,7 @@ body {
   background-color: greenyellow;
   width: 40%;
   height: 50%;
+ 
 }
 
 input[type=text], select, textarea {
