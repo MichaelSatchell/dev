@@ -161,7 +161,6 @@ body {
 
 
 
-
   .hamburger-menu {
    position:absolute;
    top: .75rem;
@@ -180,7 +179,7 @@ body {
     background-color: white;
     border-radius: 10px;
   }
-  
+  /*..................Cell Phone Media Query............*/
   @media (width < 768px) {
     .hamburger-menu {
       display: flex;
@@ -904,8 +903,7 @@ body {
   transform: translate(-50%, -50%);
   position: relative;
   margin: 0;
-  
-  
+   
   
   
 }
