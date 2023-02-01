@@ -78,8 +78,20 @@ body {
   background-color: black;
   
 }
+.cube {
+   z-index: 5;
+    position: relative;      
+    animation: rotateCube 3s infinite;
 
-
+}
+@keyframes rotateCube {
+    0% {
+        transfrom: rotate(-360deg)
+    }
+    100% {
+        transform: rotate(360deg)
+    }
+}
 /* ........................Top Navagation Bar Large Screen............ */
 
 @media (width >= 768px) {
