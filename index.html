@@ -195,8 +195,13 @@
                      Default is "Notifications". you can overwrite here -->
                      <input type="hidden" name="from_name" value="https://michaelsatchell.github.io/dev/">
                      <input type="hidden" name="access_key" value="78aaedb4-326a-4f97-9c01-2683d2e3f3b6">
-                   
-                
+                     <!-- Optional: But Recommended: To Prevent SPAM Submission.
+                     Make sure its hidden by default -->
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                                          
+                <!-- Google reCaptcha v3: To Prevent SPAM Submission.
+                     This feature available to PRO & Starter Plan users only -->
+                <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
                 <input type="hidden" name="redirect" value="satchmo.codes@gmail.com">
                 <br>
                 <label for="name">Name:</label>   
@@ -215,21 +220,9 @@
                 <br>
                 <label for="message">Message</label>
                   <textarea id="message" name="message"></textarea>
-                <br>
-                
+                <br>                
                 <button class="submit" onclick="pop1()" value="Submit"> submit </button>
-                </input>
-                <br>
-               
-              
-                <!-- Optional: But Recommended: To Prevent SPAM Submission.
-                     Make sure its hidden by default -->
-                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-              
-                             
-                <!-- Google reCaptcha v3: To Prevent SPAM Submission.
-                     This feature available to PRO & Starter Plan users only -->
-                <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
+                </input>             
               </form>
               </div>
 
