@@ -63,8 +63,15 @@ body {
       rgba(222, 226, 228, 0.25) 0%,
       rgba(60, 58, 59, 0.25) 60%,
       rgba(1, 0, 0, 0.25) 100%);
-      color: white;
+      color: greenyellow;
     
+} 
+.pinkSection {
+    background: rgb(252, 142, 172, 60%);
+}
+
+.blueSection {
+   background-color: rgba(135, 206, 235, 40%);
 }
 
 body {
@@ -416,8 +423,10 @@ align-items: center;
   justify-content: center;
   
 }
+
+/*...............Typography Outline.............*/
 .blankTextIntro {
-  color: transparent;
+  color: transparent;  
   font-size: 8rem;
   -webkit-text-stroke: 1px;
   -webkit-text-stroke-color: white;
