@@ -1081,6 +1081,11 @@ textarea {
   animation: circleBg1 8s ease-in-out 0s infinite;
 }
 
+.contactInput {
+border-radius: 500px;
+}
+
+
 .footerLine {
     width: 50%;
     color: greenyellow;
