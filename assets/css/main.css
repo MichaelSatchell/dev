@@ -210,7 +210,7 @@ body {
     border-radius: 10px;
   }
   /*..................Cell Phone Media Query............*/
-  @media (width < 768px) {
+  @media (width < 991px) {
     .hamburger-menu {
       display: flex;
     }
@@ -243,16 +243,25 @@ body {
     }
 
     h1 {
-      font-size: 6rem;
+      font-size: .8rem;
     }
 
     h2 {
-      font-size: 4rem;
+      font-size: .5rem;
     }
 
     h3 { 
+      font-size: .3rem;
+    }
+    .blankText {
+      font-size: 6rem;
+    }
+
+    .subTitle {
       font-size: 2rem;
     }
+
+    
 } 
 
  
@@ -272,8 +281,6 @@ body {
     place-items: center;
     align-content: center;
     min-height: 100vh;
-    
-
   }
   /* ...................animated on scroll css actions....................... */
   .hidden {
@@ -653,6 +660,7 @@ font-size: 1.5rem;
   bottom: 6%;
   left: 84%;
   animation: rotate 10s linear infinite;
+  color: white;
   
   
 }
@@ -677,6 +685,7 @@ font-size: 1.5rem;
   bottom: 6%;
   left: 84%;
   animation: rotate2 10s linear infinite;
+  color: white;
   
 }
 
