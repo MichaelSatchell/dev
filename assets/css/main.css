@@ -489,26 +489,27 @@ align-items: center;
   -webkit-text-stroke: 1px;
   -webkit-text-stroke-color: white;
   -webkit-background-clip: text;
-  left: 36%;
-  top: 15%;
-  position: relative; 
-  z-index: 105;
-  padding: 2rem;  
-  width: 120%;
-  height: auto;
- 
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 15%;
+  background: url(""), ;
+  position: relative;
+  -webkit-background-clip: text;
+  background-position: 0 0;
+  animation: waveText 20s linear infinite;
   
 }
 .subTitleIntro {
   text-transform: uppercase;
-  font-size: 4rem;
+  font-size: 2.2rem;
   width: 100vw;
   bottom: 1rem;
-  position: relative;
-  top: 25%;
-  left: -32%;
+  position: absolute;
+  top: 35%;
+  left: 23%;
   z-index: 2;
-  writing-mode: vertical-lr;
+  */writing-mode: vertical-lr;*/
 }
 
 
@@ -1090,4 +1091,11 @@ border-radius: 500px;
     width: 50%;
     color: greenyellow;
     
+}
+
+.MeMoji {
+    position: absolute;
+    left: 10%;
+    bottom: 30%;
+    z-index: -1;
 }
