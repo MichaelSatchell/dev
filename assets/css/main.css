@@ -254,13 +254,25 @@ body {
       font-size: .3rem;
     }
     .blankText {
-      font-size: 6rem;
+      font-size: 10rem !important;
+     
+      
     }
 
     .subTitle {
-      font-size: 2rem;
+      font-size: 4rem !important;
+      
     }
 
+    .blankTextIntro {
+        font-size: 10rem !important;
+        
+    }
+    .subTitleIntro {
+        font-size: 4rem !important;
+        left: -48% !important;
+    }
+   
     
 } 
 
@@ -281,6 +293,8 @@ body {
     place-items: center;
     align-content: center;
     min-height: 100vh;
+    padding: 0;
+    margin: 0;
   }
   /* ...................animated on scroll css actions....................... */
   .hidden {
@@ -457,7 +471,7 @@ align-items: center;
 /*...............Typography Outline.............*/
 .blankTextIntro {
   color: transparent;  
-  font-size: 8rem;
+  font-size: 16rem;
   -webkit-text-stroke: 1px;
   -webkit-text-stroke-color: white;
   -webkit-background-clip: text;
