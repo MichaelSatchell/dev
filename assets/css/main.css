@@ -286,6 +286,12 @@ body {
         position: relative;
                   
       }
+      .MeMoji {
+        position: absolute;
+        left: 10%;
+        bottom: 30%;
+        z-index: -1;
+    }
     
 } 
 
@@ -464,14 +470,18 @@ align-items: center;
 /*......Landing Page Intro Paragraph.....*/
 
 .mainIntro {
-  font-size: 1rem;
-  min-width: 40vw;
-  height: auto;
-  margin: 2rem 0 0 0;
+  font-size: 1.5rem !important;
+  width: 100%;
   word-spacing: .3rem;
-  bottom: 32%;
-  left: 45%;
-  position: absolute;
+  
+  
+}
+.mainIntroParent {    
+    width: 85vw;
+    height: 100vh;
+    position: absolute;
+    top: 12%;
+   
 }
 
 .introPage {
@@ -490,10 +500,9 @@ align-items: center;
   -webkit-text-stroke: 1px;
   -webkit-text-stroke-color: white;
   -webkit-background-clip: text;
-   display: flex;
+  display: flex;
   justify-content: center;
-  align-items: center;
-  left: 15%;
+  align-items: center;  
   background: url(""), ;
   position: relative;
   -webkit-background-clip: text;
@@ -503,11 +512,11 @@ align-items: center;
 }
 .subTitleIntro {
   text-transform: uppercase;
-  font-size: 2.2rem;
+  font-size: 1.5rem;
   width: 100vw;
   bottom: 1rem;
   position: absolute;
-  top: 35%;
+  top: 25%;
   left: 23%;
   z-index: 2;
   */writing-mode: vertical-lr;*/
@@ -737,6 +746,7 @@ resized the top padding of selfie image to show better on larger screens.
     }
     .blankTextIntro {
         left: 5%;
+        font-size: 16rem;
     }
 
     .subTitleIntro {
@@ -1117,4 +1127,5 @@ border-radius: 500px;
     left: 10%;
     bottom: 30%;
     z-index: -1;
+    width: 20%;
 }
