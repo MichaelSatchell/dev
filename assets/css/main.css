@@ -468,12 +468,26 @@ align-items: center;
   position: relative;
 }
 /*......Landing Page Intro Paragraph.....*/
-
+/* .blankTextIntro {
+    color: transparent;  
+    font-size: 16rem;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: white;
+    -webkit-background-clip: text;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    background: url(""), ;
+    position: relative;
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: waveText 20s linear infinite;
+    
+  } */
 .mainIntro {
   font-size: 1.5rem !important;
   width: 100%;
-  word-spacing: .3rem;
-  
+  word-spacing: .3rem;  
   
 }
 .mainIntroParent {    
@@ -512,12 +526,12 @@ align-items: center;
 }
 .subTitleIntro {
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 2rem;
   width: 100vw;
   bottom: 1rem;
   position: absolute;
   top: 25%;
-  left: 23%;
+  left: 28%;
   z-index: 2;
   */writing-mode: vertical-lr;*/
 }
@@ -763,6 +777,11 @@ resized the top padding of selfie image to show better on larger screens.
         left: 30%;
         position: absolute;
       }
+}
+
+@media only screen and (min-width: 576px){
+
+    
 }
   /* Mobile First i.e Smaller to Larger Devices */
 
