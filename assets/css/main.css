@@ -136,11 +136,14 @@ body {
       
     }
 
-    /* .hamburger-menu {
-      visibility: hidden;
+     .hamburger-menu {
+        visibility: visible;
       position: absolute;
       
-    } */
+    } 
+    body {
+        background-color: yellow;
+    }
 
 }
 @media only screen and (max-width: 600px){
@@ -151,10 +154,9 @@ body {
         font-size: 4rem!important;
     }
     .subTitleIntro {
-        font-size: .67em!important;
-        color: red;
-        top: 56%!important;
-        left: 25%!important;
+        font-size: 1rem!important;
+        top: 34%!important;
+        left: 55%!important;
     }
     .blankText {
         font-size: 4rem!important;
@@ -169,7 +171,45 @@ body {
     .cursor2 {
       display: none;
     }
-    
+    #pulse {
+        display: none;        
+        
+    }
+    .scrollHere {
+        display: none;
+    }
+    .scrollHere2 {
+        display: none;
+    }
+ 
+    .mainIntro {
+        
+        position: absolute;
+        left: 50%!important;
+        top: 50%!important;
+        transform: translate(-40%, 50%);
+        font-size: 2.5px!important;  
+    }
+    .MeMoji {
+        position: absolute;
+        left: 50%!important;
+        bottom: 50%!important;
+        transform: translate(-50%, 50%);
+        z-index: -1;
+    }
+    .selfie {
+        width: 100%;        
+        padding-top: 36rem;
+    }
+    .resize {
+        top: -65%;
+        position: relative;
+          
+      }
+   .resizeFooter {
+    background-color: red;
+
+   }
 }
 
 @media only screen and (orientation: landscape) {
@@ -312,8 +352,7 @@ body {
     }
 
     .selfie {
-        width: 100%;
-        
+        width: 100%;        
         padding-top: 36rem;
     }
     .card {
