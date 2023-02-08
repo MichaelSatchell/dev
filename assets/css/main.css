@@ -156,11 +156,28 @@ body {
         top: 56%!important;
         left: 25%!important;
     }
+    .blankText {
+        font-size: 4rem!important;
+    }
+    .subTitle {
+        font-size: 1.5rem!important;
+        bottom: 7%!important;
+    }
+    .contactFormSmall {
+        margin-top: 3rem!important;
+    }
+    .cursor2 {
+      display: none;
+    }
+    
 }
 
 @media only screen and (orientation: landscape) {
     body{
         background-color: pink;
+    }
+    .cursor2{
+        display: none;
     }
 }
 /* ........................Top Navagation Bar Cell Phone Screen............ */
