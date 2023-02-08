@@ -157,6 +157,12 @@ body {
         left: 25%!important;
     }
 }
+
+@media only screen and (orientation: landscape) {
+    body{
+        background-color: pink;
+    }
+}
 /* ........................Top Navagation Bar Cell Phone Screen............ */
 
 
