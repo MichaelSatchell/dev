@@ -128,12 +128,12 @@ body {
     }
     ul:nth-child(1){
       margin-left: 8rem;
-      color: red;
+      
     }
 
     .navTop li {
       display: flex;
-      color: orange;
+      
     }
 
     /* .hamburger-menu {
@@ -143,7 +143,20 @@ body {
     } */
 
 }
-
+@media only screen and (max-width: 600px){
+    body{
+        background-color: green;
+    }
+    .blankTextIntro {
+        font-size: 4rem!important;
+    }
+    .subTitleIntro {
+        font-size: .67em!important;
+        color: red;
+        top: 56%!important;
+        left: 25%!important;
+    }
+}
 /* ........................Top Navagation Bar Cell Phone Screen............ */
 
 
@@ -210,7 +223,7 @@ body {
     border-radius: 10px;
   }
   /*..................Cell Phone Media Query............*/
-  @media (width < 991px) {
+  @media (max-width < 992px) {
     .hamburger-menu {
       display: flex;
     }
@@ -754,7 +767,7 @@ font-size: 1.5rem;
 /* changed the placement for extra large size screens
 resized the top padding of selfie image to show better on larger screens.
 */
-@media only screen and (min-width:1200px) {
+@media only screen and (min-width: 992px) {
     .selfie {
         width: 100%;
         padding-top: 36rem;
@@ -784,7 +797,7 @@ resized the top padding of selfie image to show better on larger screens.
         
     }
 }
-
+/*...............Landscape phones setting................*/
 @media only screen and (min-width: 576px){
 
 
