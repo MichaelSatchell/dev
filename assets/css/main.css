@@ -199,13 +199,17 @@ body {
     span:before {
         font-size: 35px!important;
         bottom: 80%!important;
-        position: absolute;
+        position: relative;
         margin-top: 90%;
        
         
     }
+    .lineIntro {
+        top: 20px!important;
+    }
     .blankTextIntro {
         font-size: 4rem!important;
+        
     }
     .subTitleIntro {
         font-size: 1rem!important;
