@@ -69,7 +69,12 @@ body {
       
     
 } 
+.descriptions{
+    margin: auto;
+    width: 50%;
+    color: white;
 
+}
 .hamburger-menu {
     position:absolute;
     top: .75rem;

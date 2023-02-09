@@ -1,0 +1,61 @@
+* {
+    font-size: 24px;
+    color: #78c26f;
+    
+    
+
+}
+
+body {
+  
+    
+    background-image: url(/assets/Animeresources/Animeimg/animebackground.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}   
+
+.formStyle{
+    background-color: #333333;
+    width: 40%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: solid .5rem black;
+    top: 10%;
+    left: 10%;
+    position: absolute;
+    /*background-image: url("/Users/michaelsatchelljr./Documents/Generation/projects/color-wheel/js5-debrief/resources/img/animebackground.webp"); */
+    background-image: url(/assets/Animeresources/Animeimg/animebackground.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}   
+
+
+}
+
+
+.formDesign {
+    margin: 2rem;
+    
+    
+}
+
+input{
+    margin: .5rem;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
