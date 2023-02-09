@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+
+<!-- Google Fonts Link-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Monoton&family=Poppins:wght@300&family=Russo+One&display=swap" rel="stylesheet">
+
+    <!-- CSS link -->
+    <link rel="stylesheet" href="./assets/ToDoApp/ToDoCss/ToDostyles.css" />
+    <title>Task Master App</title>
+
+   
+  </head>
+
+
+
+
+  <body>
+     <!-- animation -->
+  <div class="area" >
+    <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+    </ul>
+</div >
+    <!-- https://getbootstrap.com/docs/4.5/components/forms/#how-it-works -->
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <!-- <a class="navbar-brand" href="#">Contact The Creators</a> -->
+      <h5> Contact The Creators </h5>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              ><span class="sr-only">(current)</span></a>
+          </li>
+
+          <!-- links for all of our Github accounts -->
+                      <!-- Insert Your Github Link -->
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/MichaelSatchell" target="_blank"> Michael Satchell </a>
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/kefenis" target="_blank"> Solomon Kefeni </a>
+              <li class="nav-item">
+                <a class="nav-link" href="https://github.com/PayalTheAnalyst" target="_blank"> Payal Patel </a>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://github.com/LashaCole" target="_blank">  Lasha' Cole </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+    
+
+
+
+
+    <!-- Form for input parts -->
+    <!-- 4 adding task form -->
+    <form id="myForm">
+      
+      <h1>Task Master</h1>
+      
+      <div class="form-group">
+        <label for="formGroupExampleInput">Task Name:</label>
+        <input
+          type="text"
+          name="TaskName"
+          class="checkInput form-control"
+          id="newTaskNameInput"
+          placeholder="Task Name"
+        />
+        <label for="" id="errorsDip"></label>
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Task Description:</label>
+        <textarea
+          name="TaskDescription"
+          class="checkInput1 form-control"
+          id="newTaskDescriptionInput"
+          rows="3"
+          input="text"
+          placeholder="Task Description"
+        ></textarea>
+      </div>
+      <!-- using gride system -->
+      <div class="row">
+        <div class="col">
+          <label for="formGroupExampleInput">Assigned To:</label>
+          <input 
+            name="assignedTo"
+            type="text"
+            id="newTaskAssignedTo"
+            class="checkInput2 form-control"
+            placeholder="Assigned To"
+          />
+        </div>
+        
+        <div class="col">
+          <label for="formGroupExampleInput">Due Date:</label>
+          <input
+            type="date"
+            name="dates"
+            class="checkInput3 form-control"
+            id="newTaskDueDate"
+            placeholder="dd-mm-yyyy"
+            value=""
+            min="1997-01-01"
+            max="2030-12-31"
+          />
+          <p id="errors"></p>
+          <!-- <input type="text" class="form-control" placeholder="Last name" /> -->
+        </div>
+      </div>
+      <br /><br />
+      <button
+        type="button" onclick="validFormFieldInput()"
+        class="btn btn-primary btn-lg btn-block"
+        id="addButton">   Add Tasks   </button>
+      <!-- check -->
+
+<!-- task ouput area to list task that has been added by the user. -->
+      <!-- <div id ="tasks"></div> -->
+      <div  class="form-group">
+        <label for="userOutput"> <h2> Task List</h2></label>
+        <div id ="ntasks"></div>
+        <!-- <textarea 
+          name="taskList"
+          class="checkInput1 form-control "
+          id="newTaskList"
+          rows="3"> </textarea> -->
+    
+    </form>
+
+
+
+
+
+    
+   <!-- JQuery linsks -->
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+   integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+   crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+   integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+   crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+   integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+   crossorigin="anonymous"></script>
+ <!-- linking the js file -->
+    <script src="./ToDojs/taskManager.js"></script>
+    <script src="ToDojs/index.js"></script>
+   
+  </body>
+</html>
