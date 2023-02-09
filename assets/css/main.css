@@ -194,7 +194,12 @@ body {
 
 }
 @media only screen and (min-width: 0px) and (max-width: 600px){
-    
+    .cardTitle {
+        display:none!important;
+    }
+    .projectLayoutSmall {
+
+    }
    
     span:before {
         font-size: 35px!important;
@@ -217,10 +222,8 @@ body {
         margin-top: -82%!important;
         left: 50%!important;
         z-index: 200!important;
-        
-        
     }
-   
+  
     .blankText {
         font-size: 4rem!important;
     }
@@ -525,6 +528,8 @@ align-items: center;
   justify-content: center;
   align-items: center;
   margin-left: 2rem;   
+  flex-wrap: wrap;
+  
 }
 .cardTitleImg {
   padding-top: 40rem;
@@ -532,6 +537,7 @@ align-items: center;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 
