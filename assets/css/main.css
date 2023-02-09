@@ -151,8 +151,11 @@ body {
 
 /* ........................Top Navagation Bar Large Screen............ */
 
-@media (width >= 768px) {
-  
+@media (width 900px >= 768px) {
+    span:before{
+        margin-top: 30%!important;
+        font-size: 7rem!important;
+    }
 
     .navTop {
       /* border: 2px solid red; */
@@ -183,14 +186,19 @@ body {
     }
 
      
-    body {
-        background-color: yellow;
-    }
+    
 
 }
 @media only screen and (min-width: 0px) and (max-width: 600px){
-    body{
-        background-color: green;
+    
+   
+    span:before {
+        font-size: 35px!important;
+        bottom: 80%!important;
+        position: absolute;
+        margin-top: 90%;
+       
+        
     }
     .blankTextIntro {
         font-size: 4rem!important;
@@ -235,10 +243,12 @@ body {
     }
     .MeMoji {
         position: absolute;
-        left: 50%!important;
-        bottom: 50%!important;
+        left: 40%!important;
+        bottom: 62%!important;
         transform: translate(-50%, 50%);
         z-index: -1;
+        width: 230px!important;
+        
     }
     .selfie {
         width: 100%;        
@@ -254,12 +264,15 @@ body {
 
    }
    
+   .subTitleIntro {
+    font-size: 2rem!important;
+    top: 25%!important;
+   }
+   
 }
 
 @media only screen and (orientation: landscape) {
-    body{
-        background-color: pink;
-    }
+  
     .cursor2{
         display: none;
     }
@@ -598,18 +611,66 @@ align-items: center;
     
   } */
 .mainIntro {
-  font-size: 1.5rem !important;
-  width: 100%;
-  word-spacing: .3rem;  
-  flex-wrap: wrap; 
   
+  width: 100vw;
+  word-spacing: .3rem;  
+   
+}
+
+
+span:before {
+    content: '';
+    animation: wordAnimation infinite 8s;
+    color: transparent;  
+    font-size: 10rem;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: white;
+    -webkit-background-clip: text;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    background: url(""), ;
+    position: relative;
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    width: 100%;
+    margin-top: 10%;
+    margin-left: 8%;
+    
+    
+}
+@keyframes wordAnimation {
+    0% {
+        content: 'Front-end Developer'
+    }
+    20% {
+        content: 'ServiceNow Developer'
+
+    }
+
+    40% {
+        content: 'UX/UI Designer'
+    }
+
+    60% {
+        content: 'Photographer'
+    }
+
+    80% {
+        content: "Freelancer"
+   }
+  100% {
+    content: "Overall good guy :)"
+   }
+    
 }
 .mainIntroParent {    
-    width: 85vw;
+    width: 100vw;
     height: 100vh;
     position: absolute;
     top: 12%;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
+    
    
 }
 
@@ -873,6 +934,11 @@ resized the top padding of selfie image to show better on larger screens.
         padding-top: 36rem;
         
     }
+    span:before{
+        margin-top: 10%;
+        font-size: 12rem;
+    }
+
     .blankTextIntro {
         left: 5%;
         font-size: 16rem;
@@ -884,13 +950,14 @@ resized the top padding of selfie image to show better on larger screens.
     }
     .mainIntro {
         font-size: 3rem;
-        min-width: 40vw;
+        /*min-width: 40vw;*/
         height: auto;
         margin: 2rem 0 0 0;
         word-spacing: .3rem;
         bottom: 32%;
         left: 48%;
         position: absolute;
+        
       }
     .lineIntro {
         top: 5%!important;
