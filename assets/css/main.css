@@ -200,7 +200,7 @@ body {
         font-size: 35px!important;
         bottom: 80%!important;
         position: relative;
-        margin-top: 90%;
+        margin-top: 70%!important;
        
         
     }
@@ -213,9 +213,14 @@ body {
     }
     .subTitleIntro {
         font-size: 1rem!important;
-        top: 34%!important;
-        left: 55%!important;
+        position: relative!important;
+        margin-top: -82%!important;
+        left: 50%!important;
+        z-index: 200!important;
+        
+        
     }
+   
     .blankText {
         font-size: 4rem!important;
     }
