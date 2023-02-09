@@ -37,7 +37,9 @@ a {
   border: .25em solid hsl(120 75% 50% / 1);
   border-radius: 100vw;
  }
- 
+ .navbar-links {
+    z-index: 12;
+ }
  h1{
   font-size: 8rem;
   text-transform: uppercase;
@@ -64,17 +66,61 @@ body {
       rgba(60, 58, 59, 0.25) 60%,
       rgba(1, 0, 0, 0.25) 100%);
       color: greenyellow;
+      
     
 } 
-.keyboard {
-    position: absolute;
-    left: 8rem;
-    top: .5rem;
-    z-index: 1;
-    
-}
-.olive {
-    color: rgba(71, 89, 39);
+
+.hamburger-menu {
+    position:absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+     
+   }
+ 
+   .hamburger-menu .hamlink {
+     height: 3px;
+     width: 100%;
+     background-color: white;
+     border-radius: 10px;
+   }
+
+/* Media query for Nav Bar.....Hamburger Bar..... */
+@media (max-width: 1029px) {
+    .hamburger-menu {
+        display: flex;
+    }
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start; 
+    }
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+    .navbar-links li {
+        text-align: center;
+    }
+    .navbar-links li a {
+        padding: .5rem 1rem;
+    }
+    .navbar-links.active {
+        display: flex;
+    }
+     .logo {
+        position: relative;
+        left: -32%!important;
+        font-size: 16px!important;
+     } 
+
 }
 .pinkSection {
     background: rgb(252, 142, 172, 60%);
@@ -136,11 +182,7 @@ body {
       
     }
 
-     .hamburger-menu .hamlink {
-      visibility: visible!important;
-      position: absolute;
-      
-    } 
+     
     body {
         background-color: yellow;
     }
@@ -188,7 +230,8 @@ body {
         left: 50%!important;
         top: 50%!important;
         transform: translate(-40%, 50%);
-        font-size: 2.5px!important;  
+        font-size: 2.5px!important; 
+        
     }
     .MeMoji {
         position: absolute;
@@ -207,9 +250,10 @@ body {
           
       }
    .resizeFooter {
-    background-color: red;
+    
 
    }
+   
 }
 
 @media only screen and (orientation: landscape) {
@@ -225,8 +269,8 @@ body {
 
   
 
-  /* #fullNav {
-    visibility: hidden;
+  /*#fullNav {
+    display: none;
     position: absolute;
 
   } */
@@ -261,32 +305,12 @@ body {
 }
 
 
-
-
-  .hamburger-menu {
-   position:absolute;
-   top: .75rem;
-   right: 1rem;
-   display: none;
-   flex-direction: column;
-   justify-content: space-between;
-   width: 30px;
-   height: 21px;
-    
-  }
-
-  .hamburger-menu .hamlink {
-    height: 3px;
-    width: 100%;
-    background-color: white;
-    border-radius: 10px;
-  }
   /*..................Cell Phone Media Query............*/
   @media (max-width < 992px) {
-    .hamburger-menu {
+  /*  .hamburger-menu {
       display: flex;
     }
-
+    
     .navbar-links {
       display: none;
       width: 100%;
@@ -324,7 +348,7 @@ body {
 
     h3 { 
       font-size: .3rem;
-    }
+    } */
     .blankText {
       font-size: 10rem !important;
      
@@ -577,6 +601,7 @@ align-items: center;
   font-size: 1.5rem !important;
   width: 100%;
   word-spacing: .3rem;  
+  flex-wrap: wrap; 
   
 }
 .mainIntroParent {    
@@ -584,6 +609,7 @@ align-items: center;
     height: 100vh;
     position: absolute;
     top: 12%;
+    flex-wrap: wrap; 
    
 }
 
@@ -874,6 +900,8 @@ resized the top padding of selfie image to show better on larger screens.
 }
 /*...............Landscape phones setting................*/
 @media only screen and (min-width: 576px){
+
+
 
 
 }

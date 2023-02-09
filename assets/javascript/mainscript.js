@@ -10,11 +10,11 @@ const observer = new IntersectionObserver((entries) => {
     });
 });
 
-//...............hamburger Nav...........//
+
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
 
-
+//...............hamburger Nav...........//
 const hamburgerBtn = document.getElementsByClassName('hamburger-menu')[0]
 const navbarLinks = document.getElementsByClassName('navbar-links')[0]
 
@@ -72,22 +72,6 @@ randomWisdom = () => {
 // };
 
 
-
-// document.body.style.backgroundColor = 'red';
-function quoteReset() {
-    document.getElementsById("hellowWorld").reset();
-  }
-
-
-
- 
- 
-  function timedText() {
-    const x = document.getElementById("text").innerHTML;
-    setTimeout(() => { x.value = "DEVELOPER" }, 2000);
-    setTimeout(() => { x.value = "DESIGNER" }, 4000);
-    setTimeout(() => { x.value = "ARTIST" }, 6000);
-}
 
 const cursor1 = document.querySelector('.cursor1');
 const cursor2 = document.querySelector('.cursor2');
